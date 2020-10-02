@@ -99,6 +99,12 @@ result=result*mpro[1][1]
 result2=result2*mpro[0][1]
 #print(result)
 
+for k in range(len(lcount[col-2])):
+        var=lpara[col-2][k]
+        num=lcount[col-2][var]
+        tot=row-1
+        mpro.append((var,num/tot))
+        
 if(result>result2):
         print("Under those parameters the car will be stolen")
 else:
